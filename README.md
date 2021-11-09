@@ -1,6 +1,6 @@
 # my-github-repocard
 
-Display a github profile card in VueJS 2 from Github username
+Display a github repository card in VueJS 2 from Github username and repository name
 
 ![alt text](demo.png)
 
