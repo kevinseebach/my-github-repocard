@@ -1,11 +1,15 @@
 {
   "name": "my-vue-github-repo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/my-vue-github-repo.umd.js",
   "module": "dist/my-vue-github-repo.esm.js",
   "unpkg": "dist/my-vue-github-repo.min.js",
   "browser": {
     "./sfc": "src/my-vue-github-repo.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinseebach/my-github-repocard.git"
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
