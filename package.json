@@ -1,0 +1,24 @@
+{
+  "name": "my-vue-github-repo",
+  "version": "0.0.1",
+  "main": "dist/my-vue-github-repo.umd.js",
+  "module": "dist/my-vue-github-repo.esm.js",
+  "unpkg": "dist/my-vue-github-repo.min.js",
+  "browser": {
+    "./sfc": "src/my-vue-github-repo.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/my-vue-github-repo.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/my-vue-github-repo.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/my-vue-github-repo.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
