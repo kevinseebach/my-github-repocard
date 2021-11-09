@@ -100,6 +100,7 @@ export default {
   width: calc(100% * 2/3);
   padding:10px 5px;
   align-self: center;
+  text-align: center;
 }
 
 #repo_title{
@@ -181,6 +182,7 @@ export default {
   font-weight: 700;
   padding: 11px 0 10px;
   color: #646464;
+  text-align:center;
 }
 
 
